@@ -23,7 +23,7 @@ public class Asset implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long assetId;
+    private Long id;
     @Temporal(javax.persistence.TemporalType.DATE)
     private Date dateAdded;
     private Double homeLongitude;
@@ -58,7 +58,7 @@ public class Asset implements Serializable {
     }
 
     public Long getId() {
-        return assetId;
+        return id;
     }
 
 //    public void setId(Long id) {
@@ -67,7 +67,7 @@ public class Asset implements Serializable {
     @Override
     public int hashCode() {
         int hash = 0;
-        hash += (assetId != null ? assetId.hashCode() : 0);
+        hash += (id != null ? id.hashCode() : 0);
         return hash;
     }
 
@@ -78,7 +78,7 @@ public class Asset implements Serializable {
             return false;
         }
         Asset other = (Asset) object;
-        if ((this.assetId == null && other.assetId != null) || (this.assetId != null && !this.assetId.equals(other.assetId))) {
+        if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
             return false;
         }
         return true;
@@ -86,7 +86,7 @@ public class Asset implements Serializable {
 
     @Override
     public String toString() {
-        return "entity.Asset[ id=" + assetId + " ]";
+        return "entity.Asset[ id=" + id + " ]";
     }
 
 }

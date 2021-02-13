@@ -28,6 +28,10 @@ public class VehicleAsset extends Asset {
     private String registrationNumber;
     private Double mileage;
 
+    public VehicleAsset() {
+        super();
+    }
+
 //    @Override
 //    public String toString() {
 //        return "fleetflow.entity.VehicleAsset[ id=" + id + " ]";

@@ -5,7 +5,7 @@
  */
 package fleetflow;
 
-import controllers.VehicleAssetPositionController;
+import fleetflow.controllers.VehicleAssetPositionController;
 import fleetflow.entity.VehicleAsset;
 import fleetflow.utils.PersistanceUtils;
 import fleetflow.utils.VehicleManufacturerEnum;
